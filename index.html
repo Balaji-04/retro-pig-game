@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,height=device-height, initial-scale=1.0"
+    />
+    <title>Retro Pig Game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="images/pig-game.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    
+  </head>
+  <body>
+    <p class = "title">Retro Pig Game</p>
+
+    <div class = "instruct-modal">
+        <button class="btn instruct-close-button">X</button>
+        <p class="instruct-text"> Pig (dice game): This is a popular and simple dice game where players take turns rolling a single die (or two dice, depending on the variation). At each turn, you can choose to either:
+            Roll again: Keep adding the new roll to your current turn score. You can keep rolling as long as you don't roll a 1.
+            Hold: Stop rolling and add your current turn score to your overall score. The turn then passes to the next player.
+            If you roll a 1, your turn score goes to 0 and it becomes the other player's turn. The first player to reach a certain target score (often 100) wins the game.</p>
+    </div>
+
+    <div class="outer">
+      <div class="left">
+        <p class="p-one">PLAYER 1</p>
+        <p class="score-one">0</p>
+        <div class="left-inner">
+          <p>CURRENT</p>
+          <p class="high-score-one">0</p>
+        </div>
+      </div>
+
+      <div class="right hidden">
+        <p class="p-two">PLAYER 2</p>
+        <p class="score-two">0</p>
+        <div class="right-inner">
+          <p>CURRENT</p>
+          <p class="high-score-two">0</p>
+        </div>
+      </div>
+      <button class = "btn instruct-button">INSTRUCTIONS</button>
+      <button class="btn new-button">NEW GAME!</button>
+      <img alt="dice-image" class="image" src="images/one-dice.png"></img>
+      <button class = "btn roll-button">ROLL DICE</button>
+      <button class = "btn hold-button">HOLD</button>
+    </div>
+
+    
+    <script src = "script.js"></script>
+  </body>
+</html>
